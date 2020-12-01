@@ -202,31 +202,6 @@ class ATM{
     }
 }
 
-// класс ATMS предназначен для реализации задачи через методы с префиксом show,
-// которые не использовались в реализации класса ATM. В этом случае обработка ошибок
-// будет вестись на сервере
-// сейчас это еще не реализовано. Релизую когда будет время.
-//
-class ATMS{
-    private let userCardId:String
-    private let userCardPin:Int
-    private var someBank:BankApi
-    private let action:UserActions
-    private let paymentMethod:PaymentMethod?
-    
-    init(userCardId:String, userCardPin:Int, someBank:BankApi, action:UserActions, paymentMethod:PaymentMethod?=nil) {
-        self.userCardId = userCardId
-        self.userCardPin = userCardPin
-        self.someBank = someBank
-        self.action = action
-        self.paymentMethod = paymentMethod
-        self.sendUserDataToBank()
-    }
-    private final func sendUserDataToBank(){
-        //
-    }
-
-}
 
 
 
