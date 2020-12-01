@@ -146,6 +146,7 @@ class ATM{
                 """)
         // клиент запросил снятие наличных
         case .cashWithdrawal:
+            print("ХО-ХО-ХО")
             print("""
                 \(Phrase.hello.rawValue) \(someBank.showUserName()).
                 \(Phrase.yourChoice.rawValue) \(OperDescription.cashFromDepo.rawValue) \(Phrase.summa.rawValue) \(operSum)
