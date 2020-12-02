@@ -72,6 +72,7 @@ enum PaymentMethod {
     case withCash(method:String = "НАЛИЧНВМИ")
     case fromAccount(method:String = "БЕЗНАЛИЧНВМИ")
 }
+// протокол BankApi был слегка изменен
 
 protocol BankApi{
     func showUserBalance()->Float // возвращает остаток на банковском депозите
